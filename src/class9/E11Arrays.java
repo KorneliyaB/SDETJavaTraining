@@ -1,0 +1,17 @@
+package class9;
+
+public class E11Arrays {
+    public static void main(String[] args) {
+        // 2nd way to create an arrays
+        int [] numbers=new int[5];
+        int num=50;
+        for (int i =0; i < numbers.length; i++) {
+            numbers[i]=num;
+            num=num+10;
+        }
+        {
+            for (int number : numbers)
+                System.out.println(number);
+        }
+    }
+}
