@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class Task6 {
     //Write a java program to check whether a given
     //number is prime or not?
+    //1. number should be >1
+    //2. num should be divisible by itself only
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
         System.out.println("Enter a prime number: ");

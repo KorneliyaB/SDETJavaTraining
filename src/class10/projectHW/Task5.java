@@ -10,9 +10,9 @@ public class Task5 {
         //before swapping
         System.out.println("x="+x);
         System.out.println("z="+z);
-        x=x+z;
-        z=x-z;
-        x=x-z;
+        x=x+z; //9
+        z=x-z; //3
+        x=x-z;//6
         //after swapping
         System.out.println();
 

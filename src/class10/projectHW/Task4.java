@@ -15,13 +15,15 @@ for that array.
         };
         int even=0;
         int odd=0;
+        int number; //declaring number
+
         for (int i=0; i< num.length; i++){
             for (int j=0;j< num[i].length; j++){
-                if (num[i][j]%2==0){
-                    even=even+num[i][j];
-                } else if (num[i][j]%2!=0) {
-                    odd=odd+num[i][j];
-
+                number=num[i][j];
+                if (number%2==0){
+                    even=even+number;
+                } else { //or (number%2!=0)
+                    odd=odd+number;
                 }
             }
         }

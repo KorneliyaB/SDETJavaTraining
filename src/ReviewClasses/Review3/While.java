@@ -1,4 +1,4 @@
-package ReviewClass.LogicalO;
+package ReviewClasses.Review3;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package ReviewClass.LogicalO;
+package ReviewClasses.Review3;
 
 public class Switch {
     public static void main(String[] args) {

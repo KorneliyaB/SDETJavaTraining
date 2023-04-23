@@ -1,4 +1,4 @@
-package ReviewClass.LogicalO;
+package ReviewClasses.Review3;
 
 public class LO1 {
     public static void main(String[] args) {
