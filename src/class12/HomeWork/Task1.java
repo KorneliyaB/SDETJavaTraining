@@ -7,8 +7,7 @@ public class Task1 {
     //For Example String str=hello =>l
     public static void main(String[] args) {
         String str = "Welcome";
-        if (str.length()!=0){
-            if (str.length()%2==1 && str.length()>3){
+            if (!str.isBlank() && str.length()%2==1 && str.length()>3){
                 int middleIndex = str.length()/2;
                 char mid = str.charAt(middleIndex);
                 System.out.println(mid);
@@ -16,4 +15,4 @@ public class Task1 {
 
         }
     }
-}
+

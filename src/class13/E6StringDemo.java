@@ -1,6 +1,6 @@
 package class13;
 
-public class E5StringDemo {
+public class E6StringDemo {
     public static void main(String[] args) {
         String str="Wife";
         str.toLowerCase();

@@ -9,6 +9,6 @@ public class E8StringDemo {
 
 
         String searchWord="Java";
-        System.out.println(sentence.startsWith("java"));
+        System.out.println(sentence.endsWith("easy"));
     }
 }

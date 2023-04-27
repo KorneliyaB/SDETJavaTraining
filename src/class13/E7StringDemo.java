@@ -1,2 +1,13 @@
-package class13;public class E7StringDemo {
+package class13;
+
+public class E7StringDemo {
+    public static void main(String[] args) {
+        String  name="Marina";
+        String name1="Abdul";
+        String name3="Brett";
+        String country="USA";
+        String country2="USA";
+        String country3="USA";
+
+    }
 }
