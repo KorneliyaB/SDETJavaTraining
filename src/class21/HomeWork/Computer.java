@@ -6,78 +6,101 @@ public class Computer {
     //Define some methods specific to child classes
     //Create objects of child classes and store them into array.
     // Loop through each object and execute available methods.
-    private final String model;
-    private final int price;
+        private String brand;
+        private int price;
 
-    public Computer(String model, int price) {
-        this.model = model;
-        this.price = price;
-}
-void displayInfo(){
-    System.out.println(" Model "+model);
-    System.out.println(" Price "+price);
-}
-    public void turnOn(){
-        System.out.println(" Turning on "+ model);
-    }
-    public void shutDown(){
-        System.out.println("Shutting down "+model);
-    }
-}
-class Apple extends Computer{
-    String warranty;
+        Computer(String brand, int price) {
+            this.brand = brand;
+            this.price = price;
+        }
 
-    public Apple(String warranty, int price) {
-        super("Apple", price);
-        this.warranty = warranty;
+        void displayInfo() {
+            System.out.println("Brand: " + brand);
+            System.out.println("Price: $" + price);
+        }
+
+        void turnOn() {
+            System.out.println(brand + " computer is turning on.");
+        }
+
+        void turnOff() {
+            System.out.println(brand + " computer is turning off.");
+        }
+
     }
-    @Override
-    void displayInfo() {
-        super.displayInfo();
-        System.out.println("Warranty: " + warranty);
+
+    class Apple extends Computer {
+        String model;
+
+        Apple(String model, int price) {
+            super("Apple", price);
+            this.model = model;
+        }
+
+        @Override
+        void displayInfo() {
+            super.displayInfo();
+            System.out.println("Model: " + model);
+        }
+
+        void useiTunes() {
+            System.out.println("Using iTunes on " + model);
+        }
     }
-    void useDellSupport() {
-        System.out.println("Using Apple Support");
-}
-class Lenovo extends Computer{
+
+    class Lenovo extends Computer {
+        String processor;
+
+        Lenovo(String processor, int price) {
+            super("Lenovo", price);
+            this.processor = processor;
+        }
+
+        @Override
+        void displayInfo() {
+            super.displayInfo();
+            System.out.println("Processor: " + processor);
+        }
+
+        void useTrackPoint() {
+            System.out.println("Using TrackPoint on Lenovo");
+        }
+    }
+
+    class HP extends Computer {
         String serialNumber;
 
-    Lenovo(String serialNumber, int price) {
-        super("Lenovo", price);
-        this.serialNumber = serialNumber;
-    }
-    @Override
-    void displayInfo() {
-        super.displayInfo();
-        System.out.println("Serial Number: " + serialNumber);
-    }
-    void useLenovoAssistant() {
-        System.out.println("Using Lenovo Assistant");
-    }
-}}
-class HP extends Computer{
-    String processor;
+        HP(String serialNumber, int price) {
+            super("HP", price);
+            this.serialNumber = serialNumber;
+        }
 
-    HP(String processor, int price) {
-        super("HP", price);
-        this.processor = processor;
-    }
-    @Override
-    void displayInfo() {
-        super.displayInfo();
-        System.out.println("Processor: " + processor);
-    }
-}
-class Dell extends Computer{
-    boolean foldable;
+        @Override
+        void displayInfo() {
+            super.displayInfo();
+            System.out.println("Serial Number: " + serialNumber);
+        }
 
-    public Dell(String model, int price, boolean foldable) {
-        super("Dell", price);
-        this.foldable = foldable;
+        void useHPAssistant() {
+            System.out.println("Using HP Assistant");
+        }
     }
 
+    class Dell extends Computer {
+        String warranty;
 
-    public boolean isFoldable() {
-        return foldable;
+        public Dell(String warranty, int price) {
+            super("Dell", price);
+            this.warranty = warranty;
+        }
+
+        @Override
+        void displayInfo() {
+            super.displayInfo();
+            System.out.println("Warranty: " + warranty);
+        }
+
+        void useDellSupport() {
+            System.out.println("Using Dell Support");
+        }
     }
-}
