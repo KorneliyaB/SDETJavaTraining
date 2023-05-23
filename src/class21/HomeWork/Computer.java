@@ -13,22 +13,17 @@ public class Computer {
             this.brand = brand;
             this.price = price;
         }
-
         void displayInfo() {
             System.out.println("Brand: " + brand);
             System.out.println("Price: $" + price);
         }
-
         void turnOn() {
-            System.out.println(brand + " computer is turning on.");
+            System.out.println(brand + " turning on.");
         }
-
         void turnOff() {
-            System.out.println(brand + " computer is turning off.");
+            System.out.println(brand + " turning off.");
         }
-
     }
-
     class Apple extends Computer {
         String model;
 
@@ -36,70 +31,56 @@ public class Computer {
             super("Apple", price);
             this.model = model;
         }
-
         @Override
         void displayInfo() {
             super.displayInfo();
             System.out.println("Model: " + model);
         }
-
         void useiTunes() {
-            System.out.println("Using iTunes on " + model);
+            System.out.println("Using iTunes " + model);
         }
     }
-
     class Lenovo extends Computer {
         String processor;
-
         Lenovo(String processor, int price) {
             super("Lenovo", price);
             this.processor = processor;
         }
-
         @Override
         void displayInfo() {
             super.displayInfo();
             System.out.println("Processor: " + processor);
         }
-
         void useTrackPoint() {
-            System.out.println("Using TrackPoint on Lenovo");
+            System.out.println("Using TrackPoint ");
         }
     }
-
     class HP extends Computer {
         String serialNumber;
-
         HP(String serialNumber, int price) {
             super("HP", price);
             this.serialNumber = serialNumber;
         }
-
         @Override
         void displayInfo() {
             super.displayInfo();
             System.out.println("Serial Number: " + serialNumber);
         }
-
         void useHPAssistant() {
             System.out.println("Using HP Assistant");
         }
     }
-
     class Dell extends Computer {
         String warranty;
-
         public Dell(String warranty, int price) {
             super("Dell", price);
             this.warranty = warranty;
         }
-
         @Override
         void displayInfo() {
             super.displayInfo();
             System.out.println("Warranty: " + warranty);
         }
-
         void useDellSupport() {
             System.out.println("Using Dell Support");
         }
