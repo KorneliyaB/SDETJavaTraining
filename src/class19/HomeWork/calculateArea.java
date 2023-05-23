@@ -8,6 +8,7 @@ public class calculateArea {
     int sq;
     int l;
     int w;
+
     calculateArea(int l, int w){
         this.l=l;
         this.w=w;

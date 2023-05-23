@@ -99,5 +99,11 @@ class AnimalTester{
         for (Animal animal:animals){
             animal.printInfo();
         }
+        // type casting(widening)
+        double d=10;
+        Animal dog2=new Dog("hdf","black","dshbf");
+
+        int g=(int)10.5;
+       // Dog dog3=(Dog)new Animal("shaggy","white","german"); //this not allowed
     }
 }

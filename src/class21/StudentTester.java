@@ -7,8 +7,8 @@ public class StudentTester {
         Student student[]={new SyntaxStudent(), new CollageStudent(),
         new SchoolStudent()};
         for (Student mates:student){
-     mates.learn();
-     mates.read();
+        mates.learn();
+        mates.read();
         }
         Student syntax=new SyntaxStudent();
         SyntaxStudent SS=(SyntaxStudent) syntax;

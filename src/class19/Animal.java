@@ -58,3 +58,10 @@ class AnimalTester{
 
     }
 }
+class Parent{
+    String city;
+
+    public Parent(String city) {
+        this.city = city;
+    }
+}
