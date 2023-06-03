@@ -1,6 +1,7 @@
 package class25;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class E7Maps {
     public static void main(String[] args) {
@@ -17,5 +18,8 @@ public class E7Maps {
         System.out.println(grocery.containsKey("Eggs"));
         System.out.println(grocery.containsValue(3.5));
         System.out.println(grocery.isEmpty());
+        for (Map.Entry<String, Double> value: grocery.entrySet()){
+            System.out.println(value.getValue());
+        }
     }
 }

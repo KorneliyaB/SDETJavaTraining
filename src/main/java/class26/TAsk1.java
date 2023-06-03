@@ -1,7 +1,6 @@
 package class26;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class TAsk1 {
     public static void main(String[] args) {
@@ -13,8 +12,11 @@ public class TAsk1 {
         drinks.put("Tea", 1.5);
 //remove only those which contains letter i and their price is if less than 3
 
-        drinks.entrySet();
-
+        Set<Map.Entry<String,Double>> entrySet= drinks.entrySet();
+        for (Map.Entry<String,Double> e:entrySet) {
+            System.out.println(e.getKey()+" "+e.getValue());
+        }
+        //List<Map<String,Double>> mapList=new ArrayList<>();
 
     }
 
