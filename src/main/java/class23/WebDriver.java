@@ -10,8 +10,10 @@ public interface WebDriver {
      void closeBrowser();
      void maximizeWindow();
      void findElement();
+
+    void get(String s);
 }
- class ChromeDriver implements WebDriver {
+ abstract class ChromeDriver implements WebDriver {
     @Override
     public void openBrowser() {
         System.out.println("Opening Chrome browser");
@@ -29,7 +31,7 @@ public interface WebDriver {
         System.out.println("Finding element in Chrome");
     }
 }
- class FirefoxDriver implements WebDriver {
+ abstract class FirefoxDriver implements WebDriver {
     @Override
     public void openBrowser() {
         System.out.println("Opening Firefox browser");
